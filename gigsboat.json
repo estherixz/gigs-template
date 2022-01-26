@@ -3,7 +3,12 @@
     "sourceDirectory": "pages"
   },
   "output": {
-    "markdownFile": "README-gigs.md"
+    "markdownFile": "docs/index.md"
+  },
+  "metadata": {
+    "title": "This is the html page title",
+    "description": "This is the html page description",
+    "layout": "layout"
   },
   "preContent": [
     {

@@ -1,8 +1,7 @@
 name: Create gigs
 
 on:
-  push:
-    branches: [main, master]
+  [push, workflow_dispatch]
 
 jobs:
   build:
@@ -26,8 +25,8 @@ jobs:
         uses: github-actions-x/commit@v2.8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: 'main'
+          push-branch: 'feat/issue-24-jekyll-static-site'
           commit-message: 'chore: updating README with new gigs'
-          files: README.md
+          files: docs
           name: Liran Tal
           email: liran.tal@gmail.com
